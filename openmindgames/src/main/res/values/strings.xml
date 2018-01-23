@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">OpenMind</string>
+    <string-array name="array_words">
+        <item>alma</item>
+        <item>béka</item>
+        <item>banán</item>
+        <item>cica</item>
+        <item>csacsi</item>
+        <item>dani</item>
+        <item>dávid</item>
+        <item>elefánt</item>
+        <item>fiú</item>
+        <item>fű</item>
+        <item>gomba</item>
+        <item>hajó</item>
+        <item>hegedű</item>
+        <item>játszik</item>
+        <item>kakas</item>
+        <item>kutya</item>
+        <item>leány</item>
+        <item>labda</item>
+        <item>malac</item>
+        <item>máma</item>
+        <item>nap</item>
+        <item>ovoda</item>
+        <item>peti</item>
+        <item>pók</item>
+        <item>szilva</item>
+        <item>táta</item>
+        <item>tévé</item>
+        <item>tyúk</item>
+        <item>ubi</item>
+        <item>vonat</item>
+    </string-array>
+    <string-array name="array_specialletters_hu">
+        <item>cs</item>
+        <item>zs</item>
+        <item>sz</item>
+        <item>ty</item>
+        <item>ny</item>
+        <item>gy</item>
+        <item>ly</item>
+        <item>á|a1</item>
+        <item>é|e1</item>
+        <item>í|i1</item>
+        <item>ú|u1</item>
+        <item>ü|u2</item>
+        <item>ű|u3</item>
+        <item>ó|o1</item>
+        <item>ö|u2</item>
+        <item>ő|u3</item>
+    </string-array>
+</resources>
