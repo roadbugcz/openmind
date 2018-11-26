@@ -1,6 +1,7 @@
 package org.roadbug.openmind.utils;
 
 import android.content.res.Resources;
+import android.speech.SpeechRecognizer;
 
 import java.util.HashMap;
 import java.util.List;
@@ -45,6 +46,23 @@ public class Utils {
             l.set(i, l.get(change));
             l.set(change, helper);
         };
+    }
+
+    public String speech2TextError (int err) {
+        String msg = "Unknown error";
+        switch (err) {
+            case SpeechRecognizer.ERROR_NETWORK_TIMEOUT: msg = "Network timeout error"; break;
+            case SpeechRecognizer.ERROR_NETWORK: msg = "Network error"; break;
+            case SpeechRecognizer.ERROR_AUDIO: msg = "Audio error"; break;
+            case SpeechRecognizer.ERROR_SERVER: msg = "Server error"; break;
+            case SpeechRecognizer.ERROR_CLIENT: msg = "Client error"; break;
+            case SpeechRecognizer.ERROR_SPEECH_TIMEOUT: msg = "Speech timeout error"; break;
+            case SpeechRecognizer.ERROR_NO_MATCH: msg = "No match error"; break;
+            case SpeechRecognizer.ERROR_RECOGNIZER_BUSY: msg = "Recognizer busy error"; break;
+            case SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS: msg = "Insufficient permission error"; break;
+            default: break;
+        }
+        return msg;
     }
 
 }

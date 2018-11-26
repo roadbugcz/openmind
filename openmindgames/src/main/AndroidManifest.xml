@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.roadbug.openmind">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -9,10 +12,12 @@
         android:roundIcon="@drawable/ic_openmind2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" -->
         <activity
             android:name=".SelectGameActivity"
             android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,9 +27,20 @@
         <activity
             android:name=".ReadWordsActivity"
             android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".RideGameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".SelectGameActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.roadbug.openmind.SelectGameActivity" />
         </activity>
+
     </application>
 
 </manifest>
